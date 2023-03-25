@@ -16,19 +16,23 @@ public class UserProfile
         return totalInches;
     }
 
-    //Constructor for a user object
     //w = weight, feet/inches = user's height, g = gender
     void User(float w, int feet, int inches, boolean g)
     {
         //weight in pounds, height in inches
-        weight = w;
-        height = convertHeight(feet,inches);
-        gender = g;
+        this.weight = w;
+        this.height = convertHeight(feet,inches);
+        this.gender = g;
     }
 
     float getWeight()
     {
         return weight;
+    }
+
+    void setWeight(float w)
+    {
+        this.weight = w;
     }
 
     int getHeight()
